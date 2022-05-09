@@ -1,0 +1,7 @@
+{
+  "name": "vitest-coverage",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Andrew Smith <andrew.smith2793@gmail.com>",
+  "license": "MIT"
+}
