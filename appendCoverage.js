@@ -1,6 +1,6 @@
 const fs = require("fs");
-const coverage = require("../../coverage/coverage-final.json");
-const reportFileName = "../../coverage/report.json";
+const coverage = require("./coverage/coverage-final.json");
+const reportFileName = "./coverage/report.json";
 const report = require(reportFileName);
 
 console.log(process.env);

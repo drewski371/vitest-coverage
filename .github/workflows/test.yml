@@ -33,7 +33,7 @@ jobs:
         run: yarn test --reporter=json --coverage --outputFile=coverage/report.json --run
 
       - name: Append Coverage To Report
-        run: node $GITHUB_ACTION_PATH/appendCoverage.js
+        run: node appendCoverage.js
 
       - name: Report Coverage
         if: always()
