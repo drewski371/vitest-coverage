@@ -34,7 +34,7 @@ jobs:
 
       - name: Report Coverage
         if: always()
-        uses: drewski371/vite-coverage-report-action@vitesssss
+        uses: drewski371/vite-coverage-report-action@vite
         with:
           annotations: failed-tests
           skip-step: all
