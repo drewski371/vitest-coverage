@@ -1,5 +1,5 @@
 function sayHi(greeting) {
-  console.log("hello", greeting);
+  console.log("poke");
   return greeting;
 }
 

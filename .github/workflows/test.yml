@@ -30,15 +30,16 @@ jobs:
         run: yarn install --frozen-lockfile
 
       - name: Run Unit Tests
-        working-directory: ./packages/newskit
-        run: yarn run test --reporter=json --coverage --outputFile=coverage/report.json --run
+        run: yarn test --reporter=json --coverage --outputFile=coverage/report.json --run
+
+      - name: Append Coverage To Report
+        run: node appendCoverage.js
 
       - name: Report Coverage
         if: always()
-        uses: drewski371/vite-coverage-report-action@v2
+        uses: drewski371/vite-coverage-report-action@vite
         with:
           annotations: failed-tests
-          working-directory: ./
           skip-step: all
           coverage-file: coverage/report.json
           base-coverage-file: coverage/report.json
